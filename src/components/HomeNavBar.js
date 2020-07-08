@@ -169,11 +169,11 @@ function HomeNavbar() {
                   target="_blank"
                   id="instagram-tooltip"
                 >
-                  <i className="fab fa-instagram"></i>
+                  <i className="fab fa-linkedin"></i>
                   <p className="d-lg-none d-xl-none">Instagram</p>
                 </NavLink>
                 <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
+                  Follow us on LinkedIn
                 </UncontrolledTooltip>
               </NavItem>
             </Nav>

@@ -25,8 +25,9 @@ function App() {
         {/* <Route path="/research">
           <ProfilePage />
         </Route> */}
+        <Redirect to="/home"></Redirect>
       </Switch>
-      <Redirect to="/home"></Redirect>
+      {/* <Redirect to="/home"></Redirect> */}
     </HashRouter>
   );
 }

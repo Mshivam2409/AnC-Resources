@@ -42,7 +42,7 @@ function HomeHeader() {
             <h1 className="h1-seo">Academics and Career Council</h1>
             <h3>Resources</h3>
           </div>
-          <h6 className="category category-absolute">
+          {/* <h6 className="category category-absolute">
             Designed by{" "}
             <a href="http://invisionapp.com/?ref=creativetim" target="_blank">
               <img
@@ -63,7 +63,7 @@ function HomeHeader() {
               ></img>
             </a>
             .
-          </h6>
+          </h6> */}
         </Container>
       </div>
     </>

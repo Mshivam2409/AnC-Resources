@@ -8,6 +8,7 @@ import React from "react";
 // import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import HomeHeader from "../components/HomeHeader";
 import HomeNavbar from "components/HomeNavBar";
+import Wings from "components/Wings";
 // import DarkFooter from "components/Footers/DarkFooter.js";
 
 function Home() {
@@ -42,6 +43,7 @@ function Home() {
           {/* <SignUp /> */}
           {/* <Examples /> */}
           {/* <Download /> */}
+          <Wings />
         </div>
         {/* <DarkFooter /> */}
       </div>

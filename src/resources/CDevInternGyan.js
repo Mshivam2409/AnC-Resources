@@ -19,134 +19,59 @@ import {
 } from "reactstrap";
 
 //ResourceData
-const items = [
+const data = [
   {
-    src: require("assets/img/bg1.jpg"),
-    altText: "Nature, United States",
-    caption: "Nature, United States",
+    name: "Mechanical",
   },
   {
-    src: require("assets/img/bg3.jpg"),
-    altText: "Somewhere Beyond, United States",
-    caption: "Somewhere Beyond, United States",
+    name: "Electrical",
   },
   {
-    src: require("assets/img/bg4.jpg"),
-    altText: "Yellowstone National Park, United States",
-    caption: "Yellowstone National Park, United States",
+    name: "Computer Science",
+  },
+  {
+    name: "Aerospace",
+  },
+  {
+    name: "Economics",
+  },
+  {
+    name: "Physics",
+  },
+  {
+    name: "BS-BE",
+  },
+  {
+    name: "Chemical ",
+  },
+  {
+    name: "Earth Science",
+  },
+  {
+    name: "Chemistry",
+  },
+  {
+    name: "Civil",
   },
 ];
-
-function CarouselSection() {
-  const [activeIndex, setActiveIndex] = React.useState(0);
-  const [animating, setAnimating] = React.useState(false);
-  const onExiting = () => {
-    setAnimating(true);
-  };
-  const onExited = () => {
-    setAnimating(false);
-  };
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  };
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  };
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  };
-  return (
-    <>
-      <div className="section" id="carousel">
-        <Container>
-          <Row className="justify-content-center">
-            <Col lg="8" md="12">
-              <Carousel
-                activeIndex={activeIndex}
-                next={next}
-                previous={previous}
-              >
-                <CarouselIndicators
-                  items={items}
-                  activeIndex={activeIndex}
-                  onClickHandler={goToIndex}
-                />
-                {items.map((item) => {
-                  return (
-                    <CarouselItem
-                      onExiting={onExiting}
-                      onExited={onExited}
-                      key={item.src}
-                    >
-                      <iframe
-                        title="Mechanical"
-                        width="100%"
-                        height="538"
-                        src="https://www.youtube.com/embed/m9r7D3BaTzs?list=PL8_ALs6__lmzg6fUDjSWoix--wlMJq64A"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                      ></iframe>
-                      <div className="carousel-caption d-none d-md-block">
-                        <h5 style={{ color: "#999" }}>ML</h5>
-                      </div>
-                    </CarouselItem>
-                  );
-                })}
-                <CarouselItem onExiting={onExiting} onExited={onExited} key="1">
-                  <iframe
-                    title="Quant"
-                    width="956"
-                    height="538"
-                    src="https://www.youtube.com/embed/gI50lrio3b8?list=PL8_ALs6__lmwDp56yvz7M8KET5enPOq1a"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                  <div className="carousel-caption d-none d-md-block">
-                    <h5 style={{ color: "#999" }}>Quant</h5>
-                  </div>
-                </CarouselItem>
-                <a
-                  className="carousel-control-prev"
-                  data-slide="prev"
-                  href="#pablo"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    previous();
-                  }}
-                  role="button"
-                >
-                  <i className="now-ui-icons arrows-1_minimal-left"></i>
-                </a>
-                <a
-                  className="carousel-control-next"
-                  data-slide="next"
-                  href="#pablo"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    next();
-                  }}
-                  role="button"
-                >
-                  <i className="now-ui-icons arrows-1_minimal-right"></i>
-                </a>
-              </Carousel>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-    </>
-  );
-}
+// Mechanical
+// Aerospace
+// Computer Science
+// Electrical
+// Economics
+// Physics
+// BS-BE
+// Chemical
+// Earth Science
+// Chemistry
+// Civil
+// Material Science
+// Mathematics
 
 // core components
 const CDevInternGyan = () => {
+  const [iconPills, setIconPills] = React.useState("1");
+  const [pills, setPills] = React.useState("1");
   return (
     <>
       <div className="section section-tabs">
@@ -155,26 +80,83 @@ const CDevInternGyan = () => {
             <Card>
               <CardHeader>
                 <Nav className="justify-content-center" role="tablist" tabs>
-                  <NavItem>
+                  {data.map((resource, index) => {
+                    return (
+                      <NavItem>
+                        <NavLink
+                          className={
+                            iconPills === index.toString() ? "active" : ""
+                          }
+                          href="#pablo"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIconPills(index.toString());
+                          }}
+                        >
+                          {resource.name}
+                        </NavLink>
+                      </NavItem>
+                    );
+                  })}
+                  {/* <NavItem>
                     <NavLink
-                      className="active"
+                      className={iconPills === "1" ? "active" : ""}
                       href="#pablo"
                       onClick={(e) => {
                         e.preventDefault();
+                        setIconPills("1");
                       }}
                     >
                       <i className="now-ui-icons objects_umbrella-13"></i>
-                      InternGyan
+                      Internship Preparation
                     </NavLink>
-                  </NavItem>
+                  </NavItem> */}
+                  {/* <NavItem>
+                      <NavLink
+                        className={iconPills === "2" ? "active" : ""}
+                        href="#pablo"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIconPills("2");
+                        }}
+                      >
+                        <i className="now-ui-icons shopping_cart-simple"></i>
+                        Profile
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink
+                        className={iconPills === "3" ? "active" : ""}
+                        href="#pablo"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIconPills("3");
+                        }}
+                      >
+                        <i className="now-ui-icons shopping_shop"></i>
+                        Messages
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink
+                        className={iconPills === "4" ? "active" : ""}
+                        href="#pablo"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIconPills("4");
+                        }}
+                      >
+                        <i className="now-ui-icons ui-2_settings-90"></i>
+                        Settings
+                      </NavLink>
+                    </NavItem> */}
                 </Nav>
+                {/* Internship Resources */}
               </CardHeader>
               <CardBody>
                 <TabContent className="text-left" activeTab={"iconPills"}>
                   <TabPane tabId="iconPills">
-                    <p class="h5" color="dark">
-                      <CarouselSection />
-                    </p>
+                    <p class="h5" color="dark"></p>
                   </TabPane>
                 </TabContent>
               </CardBody>

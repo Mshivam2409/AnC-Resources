@@ -87,12 +87,21 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 │           ├── now-ui-kit
 │           └── plugins
 ├── components
+│   ├── Footer.js
+│   ├── HomeHeader.js
+│   ├── HomeNavBar.js
+│   ├── WingHeader.js
+│   ├── WingNavbar.js
+│   └── Wings.js
 ├── index.css
 ├── index.js
 ├── logo.svg
 ├── pages
-│   ├── CDevWing.js
-│   └── Home.js
+│   ├── CDevWing.js
+│   └── Home.js
+├── resources
+│   ├── CDevInternGyan.js
+│   └── CdevInternPrep.js
 ├── serviceWorker.js
 └── setupTests.js
 ```

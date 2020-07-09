@@ -22,6 +22,8 @@ import {
 const data = [
   {
     name: "Mechanical",
+    link:
+      "https://www.youtube.com/embed/Rwu-tVdhcOI?list=PL8_ALs6__lmzVNdn__iPx9VhDFGSs6xGb",
   },
   {
     name: "Electrical",
@@ -70,7 +72,7 @@ const data = [
 
 // core components
 const CDevInternGyan = () => {
-  const [iconPills, setIconPills] = React.useState("1");
+  const [iconPills, setIconPills] = React.useState("0");
   const [pills, setPills] = React.useState("1");
   return (
     <>
@@ -98,66 +100,32 @@ const CDevInternGyan = () => {
                       </NavItem>
                     );
                   })}
-                  {/* <NavItem>
-                    <NavLink
-                      className={iconPills === "1" ? "active" : ""}
-                      href="#pablo"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setIconPills("1");
-                      }}
-                    >
-                      <i className="now-ui-icons objects_umbrella-13"></i>
-                      Internship Preparation
-                    </NavLink>
-                  </NavItem> */}
-                  {/* <NavItem>
-                      <NavLink
-                        className={iconPills === "2" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("2");
-                        }}
-                      >
-                        <i className="now-ui-icons shopping_cart-simple"></i>
-                        Profile
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={iconPills === "3" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("3");
-                        }}
-                      >
-                        <i className="now-ui-icons shopping_shop"></i>
-                        Messages
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={iconPills === "4" ? "active" : ""}
-                        href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIconPills("4");
-                        }}
-                      >
-                        <i className="now-ui-icons ui-2_settings-90"></i>
-                        Settings
-                      </NavLink>
-                    </NavItem> */}
                 </Nav>
-                {/* Internship Resources */}
               </CardHeader>
               <CardBody>
-                <TabContent className="text-left" activeTab={"iconPills"}>
-                  <TabPane tabId="iconPills">
+                <TabContent
+                  className="text-center"
+                  activeTab={"iconPills" + iconPills}
+                >
+                  {/* <TabContent className="text-left" activeTab={"iconPills"}> */}
+                  {/* <TabPane tabId="iconPills">
                     <p class="h5" color="dark"></p>
-                  </TabPane>
+                  </TabPane> */}
+                  {data.map((resource, index) => {
+                    return (
+                      <TabPane tabId={"iconPills" + index.toString()}>
+                        <iframe
+                          title={resource.name}
+                          width="956"
+                          height="538"
+                          src={resource.link}
+                          frameborder="0"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </TabPane>
+                    );
+                  })}
                 </TabContent>
               </CardBody>
             </Card>

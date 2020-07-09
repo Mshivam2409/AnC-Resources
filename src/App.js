@@ -6,14 +6,8 @@ import "assets/scss/now-ui-kit.scss?v=1.4.0";
 import "assets/demo/demo.css?v=1.4.0";
 import "assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 import Home from "./pages/Home";
-import {
-  BrowserRouter,
-  Route,
-  Switch,
-  Redirect,
-  MemoryRouter,
-  HashRouter,
-} from "react-router-dom";
+import { Route, Switch, Redirect, HashRouter } from "react-router-dom";
+import CdevWing from "pages/CDevWing";
 
 function App() {
   return (
@@ -22,9 +16,9 @@ function App() {
         <Route path="/home">
           <Home />
         </Route>
-        {/* <Route path="/research">
-          <ProfilePage />
-        </Route> */}
+        <Route path="/research">
+          <CdevWing />
+        </Route>
         <Redirect to="/home"></Redirect>
       </Switch>
       {/* <Redirect to="/home"></Redirect> */}

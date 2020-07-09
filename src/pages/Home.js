@@ -5,11 +5,10 @@ import React from "react";
 // } from "reactstrap";
 
 // core components
-// import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import HomeHeader from "../components/HomeHeader";
 import HomeNavbar from "components/HomeNavBar";
 import Wings from "components/Wings";
-// import DarkFooter from "components/Footers/DarkFooter.js";
+import Footer from "components/Footer";
 
 function Home() {
   React.useEffect(() => {
@@ -29,23 +28,9 @@ function Home() {
       <div className="wrapper">
         <HomeHeader />
         <div className="main">
-          {/* <Images /> */}
-          {/* <BasicElements /> */}
-          {/* <Navbars /> */}
-          {/* <Tabs /> */}
-          {/* <Pagination /> */}
-          {/* <Notifications /> */}
-          {/* <Typography /> */}
-          {/* <Javascript /> */}
-          {/* <Carousel /> */}
-          {/* <NucleoIcons /> */}
-          {/* <CompleteExamples /> */}
-          {/* <SignUp /> */}
-          {/* <Examples /> */}
-          {/* <Download /> */}
           <Wings />
         </div>
-        {/* <DarkFooter /> */}
+        <Footer />
       </div>
     </>
   );

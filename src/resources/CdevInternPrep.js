@@ -40,8 +40,9 @@ const CDevInternPrep = () => {
       <div className="section section-tabs">
         <Container>
           <Row>
+            <p className="category">Internship Preparation</p>
             <Card>
-              <CardHeader>
+              {/* <CardHeader>
                 <Nav className="justify-content-center" role="tablist" tabs>
                   <NavItem>
                     <NavLink
@@ -56,7 +57,7 @@ const CDevInternPrep = () => {
                     </NavLink>
                   </NavItem>
                 </Nav>
-              </CardHeader>
+              </CardHeader> */}
               <CardBody>
                 <TabContent className="text-left" activeTab={"iconPills"}>
                   <TabPane tabId="iconPills">

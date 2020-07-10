@@ -83,7 +83,7 @@ function HomeNavbar() {
             navbar
           >
             <Nav navbar>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   href="#pablo"
                   onClick={(e) => {
@@ -96,8 +96,8 @@ function HomeNavbar() {
                   <i className="now-ui-icons arrows-1_cloud-download-93"></i>
                   <p>Download</p>
                 </NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav>
+              </NavItem> */}
+              {/* <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
@@ -121,8 +121,8 @@ function HomeNavbar() {
                     Documentation
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
-              <NavItem>
+              </UncontrolledDropdown> */}
+              {/* <NavItem>
                 <Button
                   className="nav-link btn-neutral"
                   color="info"
@@ -136,7 +136,7 @@ function HomeNavbar() {
                 <UncontrolledTooltip target="#upgrade-to-pro">
                   Cooming soon!
                 </UncontrolledTooltip>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"

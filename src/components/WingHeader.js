@@ -35,9 +35,9 @@ const WingHeader = (props) => {
           ref={pageHeader}
         ></div>
         <Container>
-          {/* <div className="photo-container"> */}
-          {/* <img alt="..." src={require("assets/img/ryan.jpg")}></img> */}
-          {/* </div> */}
+          <div className="photo-container">
+            <img alt="..." src={require("assets/img/anclogo.png")}></img>
+          </div>
           <h3 className="title">CAREER DEVELOPMENT WING</h3>
           <p className="category">RESOURCES</p>
           {/* <div className="content">

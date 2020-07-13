@@ -26,34 +26,64 @@ const core = [
       "https://www.youtube.com/embed/Rwu-tVdhcOI?list=PL8_ALs6__lmzVNdn__iPx9VhDFGSs6xGb",
   },
   {
-    name: "Electrical",
+    name: "Aerospace",
+    link:
+      "https://www.youtube.com/embed/cLDLUhXOZ5U?list=PL8_ALs6__lmy53m3hZT9ukNqOsrsUF5_o",
   },
   {
     name: "Computer Science",
+    link:
+      "https://www.youtube.com/embed/h8PRy10RjYw?list=PL8_ALs6__lmwqzdayb0F0GoaokHpvBGsj",
   },
   {
-    name: "Aerospace",
+    name: "Electrical",
+    link:
+      "https://www.youtube.com/embed/x9G2kNN5WIc?list=PL8_ALs6__lmwHZqvJaf3V3McWjCLyCnSE",
   },
   {
     name: "Economics",
+    link:
+      "https://www.youtube.com/embed/R4LmTsXfk40?list=PL8_ALs6__lmzb-KjccOLIx5BgA2qpyDRc",
   },
   {
     name: "Physics",
+    link:
+      "https://www.youtube.com/embed/VD4BkxwmvkE?list=PL8_ALs6__lmw6CLnCMBKS7KtCX9c3oRqu",
   },
   {
     name: "BS-BE",
+    link:
+      "https://www.youtube.com/embed/0b_9hxkBmb4?list=PL8_ALs6__lmyXxhx9zAfN5iX6a4uZQxCi",
   },
   {
-    name: "Chemical ",
+    name: "Chemical",
+    link:
+      "https://www.youtube.com/embed/t-ZxHwawV2k?list=PL8_ALs6__lmyJD-vM_yTPEEPw0V1aalP8",
   },
   {
     name: "Earth Science",
+    link:
+      "https://www.youtube.com/embed/525xFYimSBE?list=PL8_ALs6__lmzsrAGhrQ8EJgPjJ0Jur6L0",
   },
   {
     name: "Chemistry",
+    link:
+      "https://www.youtube.com/embed/UcKE_YbMJac?list=PL8_ALs6__lmzKBMx5YD29byvWzM4b9Fm0",
   },
   {
     name: "Civil",
+    link:
+      "https://www.youtube.com/embed/9EmQ_6YJKBE?list=PL8_ALs6__lmwSHaETL9_GVvqzfq4myLPO",
+  },
+  {
+    name: "Material Science",
+    link:
+      "https://www.youtube.com/embed/y71rMdjCPqE?list=PL8_ALs6__lmzNc9se-V7K38iKW-cRwIBE",
+  },
+  {
+    name: "Mathematics",
+    link:
+      "https://www.youtube.com/embed/whVrUaQQwUo?list=PL8_ALs6__lmzIFbGPzPLb29jQyPOFCy_0",
   },
 ];
 // Mechanical

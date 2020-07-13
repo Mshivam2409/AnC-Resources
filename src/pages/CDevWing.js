@@ -44,7 +44,7 @@ function CdevWing() {
         <div className="section">
           <Container>
             <div className="button-container">
-              <Button className="btn-round" color="info" size="lg">
+              {/* <Button className="btn-round" color="info" size="lg">
                 Follow
               </Button>
               <Button
@@ -65,14 +65,17 @@ function CdevWing() {
                 size="lg"
               >
                 <i className="fab fa-instagram"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip340339231">
+              </Button> */}
+              {/* <UncontrolledTooltip delay={0} target="tooltip340339231">
                 Follow me on Instagram
-              </UncontrolledTooltip>
+              </UncontrolledTooltip> */}
             </div>
             <h3 className="title">About </h3>
             <h5 className="description">
-              The Following Page contains resources from the Cdev Wing,AnC
+              The Career Development Wing of the Academics and Career Council
+              brings to you a one stop guide for recommended resources useful
+              for internship preparation. Browse through each section to find
+              resources pertaining to your interest.
             </h5>
             <Row>
               <Col className="ml-auto mr-auto" md="6">

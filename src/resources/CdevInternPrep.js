@@ -19,7 +19,7 @@ const Data = [
   {
     name: "Coding Test Resources",
     link:
-      "https://docs.google.com/presentation/d/e/2PACX-1vR4UDwCPpZUTcqR34noKnXy7H6kFduonsSTiZ27Z5K2YB_yufMIIOu7KlGIP9FTYu5nJD2Nldb7HAEG/pub?start=false&loop=false&delayms=3000",
+      "https://docs.google.com/presentation/d/1X1AVPuiAzdNVh7TGcJ9wf74sNVhe08xi59QYNidfTKE/edit?usp=sharing",
   },
   {
     name: "Finance Resources",

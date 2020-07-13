@@ -87,7 +87,7 @@ const WingNavbar = (props) => {
                 href="#pablo"
                 onClick={(e) => {
                   e.preventDefault();
-                  window.location.href = "http://www.w3schools.com";
+                  window.location.href = "https://anciitk.in";
                 }}
               >
                 Back to AnC
@@ -95,11 +95,7 @@ const WingNavbar = (props) => {
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="navbar-translate">
-            <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
-              target="_blank"
-              id="navbar-brand"
-            >
+            <NavbarBrand target="_blank" id="navbar-brand">
               {props.WINGNAME}
             </NavbarBrand>
             {/* <UncontrolledTooltip target="#navbar-brand">
@@ -126,13 +122,13 @@ const WingNavbar = (props) => {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink to="/index" tag={Link}>
-                  Back to Kit
+                <NavLink to="/home" tag={Link}>
+                  Back to Home
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim">
-                  Have an issue?
+                <NavLink href="https://anciitk.in/contact.html">
+                  Contact Us
                 </NavLink>
               </NavItem>
               <NavItem>

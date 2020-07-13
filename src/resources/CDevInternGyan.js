@@ -102,6 +102,38 @@ const core = [
 const noncore = [
   {
     name: "Machine Learning",
+    link:
+      "https://www.youtube.com/embed/m9r7D3BaTzs?list=PL8_ALs6__lmzg6fUDjSWoix--wlMJq64A",
+  },
+  {
+    name: "Analytics",
+    link:
+      "https://www.youtube.com/embed/gI50lrio3b8?list=PL8_ALs6__lmwDp56yvz7M8KET5enPOq1a",
+  },
+  {
+    name: "Quant",
+    link:
+      "https://www.youtube.com/embed/JGmh6n9fTlo?list=PL8_ALs6__lmxqxQAc7OYNB8LqWGOeENRN",
+  },
+  {
+    name: "Data Science & Data Engineering",
+    link:
+      "https://www.youtube.com/embed/NgAbCy4xiMA?list=PL8_ALs6__lmxFcOweN2On97Avog87NAtQ",
+  },
+  {
+    name: "Finance",
+    link:
+      "https://www.youtube.com/embed/Ox7Nu0t9Tg4?list=PL8_ALs6__lmxXKX7V63Kny5VxWlZisD5-",
+  },
+  {
+    name: "Software",
+    link:
+      "https://www.youtube.com/embed/N95Ke-uH6xU?list=PL8_ALs6__lmwi5eyfL_4Qc90MciGCNkjv",
+  },
+  {
+    name: "Product Management",
+    link:
+      "https://www.youtube.com/embed/Jq4YQiOugG8?list=PL8_ALs6__lmy0EmOJb3zjzyFbx8vI0hYo",
   },
 ];
 

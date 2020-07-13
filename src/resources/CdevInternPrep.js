@@ -24,12 +24,12 @@ const Data = [
   {
     name: "Finance Resources",
     link:
-      "https://docs.google.com/presentation/d/e/2PACX-1vT-8iJPm8dMaGpUPuRP5CJf07aVlJmSOJ3s5yV6L5ErBsSqq83ozPu51bYZ-cLRq23wzgDY46lYEdUx/pub?start=false&loop=false&delayms=3000",
+      "https://docs.google.com/presentation/d/17fYhRpNYE3vlSV_me3d8GzJbXsDeBt6CW1GbRgtPFSg/edit?usp=sharing",
   },
   {
     name: "Quant Resources",
     link:
-      "https://docs.google.com/presentation/d/e/2PACX-1vQc20v-S9oBQiTd8BX2T98RvUB1VnfVaQ01fja5Fu5GlgS1C3vjrXfYOUcAZSy7Ss_-hihxjnVAxOQM/pub?start=false&loop=false&delayms=3000",
+      "https://docs.google.com/presentation/d/1G0EpBLRU_Yu5Qc1N_hnuNoMKsSCd3jZU7ag0BN2qG9w/edit?usp=sharing",
   },
 ];
 

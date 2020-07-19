@@ -32,9 +32,9 @@ const Data = [
       "https://docs.google.com/presentation/d/1G0EpBLRU_Yu5Qc1N_hnuNoMKsSCd3jZU7ag0BN2qG9w/edit?usp=sharing",
   },
   {
-    name: "Coding Test Resources",
+    name: "Product Management Resources",
     link:
-      "https://docs.google.com/presentation/d/1bewlCbSVaqnMcsOCyJpj7AG-3uv9DtG3C5mvW0edVyQ/edit?usp=sharing",
+      "https://docs.google.com/presentation/d/11UfPnYrsrlV-3faryKuyUIv9d3p8VU1A74Hqa9R45to/edit?usp=sharing",
   },
   {
     name: "Common HR Questions",

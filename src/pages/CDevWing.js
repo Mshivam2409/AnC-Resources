@@ -21,6 +21,7 @@ import Footer from "components/Footer";
 //Resources
 import CDevInternPrep from "resources/CdevInternPrep";
 import CDevInternGyan from "resources/CDevInternGyan";
+import Spo from "resources/Spo";
 
 function CdevWing() {
   const [pills, setPills] = React.useState("2");
@@ -73,9 +74,9 @@ function CdevWing() {
             <h3 className="title">About </h3>
             <h5 className="description">
               The Career Development Wing of the Academics and Career Council
-              brings to you a one stop guide for recommended resources useful
-              for internship preparation. Browse through each section to find
-              resources pertaining to your interest.
+              brings you a guide for resources useful for internship
+              preparation. Browse through each section to find resources
+              pertaining to your interest.
             </h5>
             <Row>
               <Col className="ml-auto mr-auto" md="6">
@@ -86,8 +87,13 @@ function CdevWing() {
               </Col>
             </Row>
           </Container>
-          <CDevInternPrep />
-          <CDevInternGyan />
+          <div className="section section-tabs">
+            <Container>
+              <CDevInternPrep />
+              <Spo />
+              <CDevInternGyan />
+            </Container>
+          </div>
         </div>
         <Footer />
       </div>

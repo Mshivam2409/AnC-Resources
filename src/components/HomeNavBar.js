@@ -53,11 +53,7 @@ function HomeNavbar() {
       <Navbar className={"fixed-top " + navbarColor} expand="lg" color="dark">
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
-              target="_blank"
-              id="navbar-brand"
-            >
+            <NavbarBrand target="_blank" id="navbar-brand">
               Academics and Career Council
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
@@ -137,7 +133,7 @@ function HomeNavbar() {
                   Cooming soon!
                 </UncontrolledTooltip>
               </NavItem> */}
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"
                   target="_blank"
@@ -149,10 +145,10 @@ function HomeNavbar() {
                 <UncontrolledTooltip target="#twitter-tooltip">
                   Follow us on Twitter
                 </UncontrolledTooltip>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                  href="https://www.facebook.com/ANCIITK/"
                   target="_blank"
                   id="facebook-tooltip"
                 >
@@ -165,12 +161,12 @@ function HomeNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href="https://www.linkedin.com/company/anciitk/?originalSubdomain=in"
                   target="_blank"
                   id="instagram-tooltip"
                 >
                   <i className="fab fa-linkedin"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
+                  <p className="d-lg-none d-xl-none">LinkedIn</p>
                 </NavLink>
                 <UncontrolledTooltip target="#instagram-tooltip">
                   Follow us on LinkedIn

@@ -39,7 +39,9 @@ function HomeHeader() {
               className="n-logo"
               src={require("assets/img/anclogo.png")}
             ></img>
-            <h1 className="h1-seo">Academics and Career Council</h1>
+            <b>
+              <h1 className="title">Academics and Career Council</h1>
+            </b>
             <h3>Resources</h3>
           </div>
           {/* <h6 className="category category-absolute">

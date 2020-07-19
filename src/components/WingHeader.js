@@ -22,7 +22,7 @@ const WingHeader = (props) => {
     }
   });
   return (
-    <>
+    <React.Fragment>
       <div
         className="page-header clear-filter page-header-small"
         filter-color="blue"
@@ -56,7 +56,7 @@ const WingHeader = (props) => {
           </div> */}
         </Container>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

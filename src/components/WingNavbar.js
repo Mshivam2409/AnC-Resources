@@ -65,7 +65,7 @@ const WingNavbar = (props) => {
               <span className="button-bar"></span>
             </DropdownToggle>
             <DropdownMenu aria-labelledby="navbarDropdown">
-              <DropdownItem header tag="a">
+              {/* <DropdownItem header tag="a">
                 Wings
               </DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
@@ -79,7 +79,7 @@ const WingNavbar = (props) => {
               </DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                 CDev Wing
-              </DropdownItem>
+              </DropdownItem> */}
               <DropdownItem divider></DropdownItem>
               <DropdownItem href="/home">Home</DropdownItem>
               <DropdownItem divider></DropdownItem>
@@ -131,7 +131,7 @@ const WingNavbar = (props) => {
                   Contact Us
                 </NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"
                   target="_blank"
@@ -143,10 +143,10 @@ const WingNavbar = (props) => {
                 <UncontrolledTooltip target="#twitter-tooltip">
                   Follow us on Twitter
                 </UncontrolledTooltip>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                  href="https://www.facebook.com/ANCIITK/"
                   target="_blank"
                   id="facebook-tooltip"
                 >
@@ -159,15 +159,15 @@ const WingNavbar = (props) => {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href="https://www.linkedin.com/company/anciitk/?originalSubdomain=in"
                   target="_blank"
                   id="instagram-tooltip"
                 >
                   <i className="fab fa-linkedin"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
+                  <p className="d-lg-none d-xl-none">LinkedIn</p>
                 </NavLink>
                 <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
+                  Follow us on LinkedIn
                 </UncontrolledTooltip>
               </NavItem>
             </Nav>

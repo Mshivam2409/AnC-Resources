@@ -151,111 +151,109 @@ const CDevInternGyan = () => {
   const [pills, setPills] = React.useState("0");
   return (
     <>
-      <div className="section section-tabs">
-        <Container>
-          <Row>
-            <p className="category">InternGYAN (Core)</p>
-            <Card>
-              <CardHeader>
-                <Nav className="justify-content-center" role="tablist" tabs>
-                  {core.map((resource, index) => {
-                    return (
-                      <NavItem>
-                        <NavLink
-                          className={
-                            iconPills === index.toString() ? "active" : ""
-                          }
-                          href="#pablo"
-                          onClick={(e) => {
-                            e.preventDefault();
-                            setIconPills(index.toString());
-                          }}
-                        >
-                          {resource.name}
-                        </NavLink>
-                      </NavItem>
-                    );
-                  })}
-                </Nav>
-              </CardHeader>
-              <CardBody>
-                <TabContent
-                  className="text-center"
-                  activeTab={"iconPills" + iconPills}
-                >
-                  {/* <TabContent className="text-left" activeTab={"iconPills"}> */}
-                  {/* <TabPane tabId="iconPills">
+      <Container>
+        <Row>
+          <p className="category">InternGYAN (Core)</p>
+          <Card>
+            <CardHeader>
+              <Nav className="justify-content-center" role="tablist" tabs>
+                {core.map((resource, index) => {
+                  return (
+                    <NavItem>
+                      <NavLink
+                        className={
+                          iconPills === index.toString() ? "active" : ""
+                        }
+                        href="#pablo"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIconPills(index.toString());
+                        }}
+                      >
+                        {resource.name}
+                      </NavLink>
+                    </NavItem>
+                  );
+                })}
+              </Nav>
+            </CardHeader>
+            <CardBody>
+              <TabContent
+                className="text-center"
+                activeTab={"iconPills" + iconPills}
+              >
+                {/* <TabContent className="text-left" activeTab={"iconPills"}> */}
+                {/* <TabPane tabId="iconPills">
                     <p class="h5" color="dark"></p>
                   </TabPane> */}
-                  {core.map((resource, index) => {
-                    return (
-                      <TabPane tabId={"iconPills" + index.toString()}>
-                        <iframe
-                          title={resource.name}
-                          width="100%"
-                          height="538"
-                          src={resource.link}
-                          frameborder="0"
-                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen
-                        ></iframe>
-                      </TabPane>
-                    );
-                  })}
-                </TabContent>
-              </CardBody>
-            </Card>
-          </Row>
-          <Row>
-            <p className="category">InternGYAN (Non-Core)</p>
-            <Card>
-              <CardHeader>
-                <Nav className="justify-content-center" role="tablist" tabs>
-                  {noncore.map((resource, index) => {
-                    return (
-                      <NavItem>
-                        <NavLink
-                          className={pills === index.toString() ? "active" : ""}
-                          href="#pablo"
-                          onClick={(e) => {
-                            e.preventDefault();
-                            setPills(index.toString());
-                          }}
-                        >
-                          {resource.name}
-                        </NavLink>
-                      </NavItem>
-                    );
-                  })}
-                </Nav>
-              </CardHeader>
-              <CardBody>
-                <TabContent className="text-center" activeTab={"pills" + pills}>
-                  {/* <TabContent className="text-left" activeTab={"iconPills"}> */}
-                  {/* <TabPane tabId="iconPills">
+                {core.map((resource, index) => {
+                  return (
+                    <TabPane tabId={"iconPills" + index.toString()}>
+                      <iframe
+                        title={resource.name}
+                        width="100%"
+                        height="538"
+                        src={resource.link}
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </TabPane>
+                  );
+                })}
+              </TabContent>
+            </CardBody>
+          </Card>
+        </Row>
+        <Row>
+          <p className="category">InternGYAN (Non-Core)</p>
+          <Card>
+            <CardHeader>
+              <Nav className="justify-content-center" role="tablist" tabs>
+                {noncore.map((resource, index) => {
+                  return (
+                    <NavItem>
+                      <NavLink
+                        className={pills === index.toString() ? "active" : ""}
+                        href="#pablo"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setPills(index.toString());
+                        }}
+                      >
+                        {resource.name}
+                      </NavLink>
+                    </NavItem>
+                  );
+                })}
+              </Nav>
+            </CardHeader>
+            <CardBody>
+              <TabContent className="text-center" activeTab={"pills" + pills}>
+                {/* <TabContent className="text-left" activeTab={"iconPills"}> */}
+                {/* <TabPane tabId="iconPills">
                     <p class="h5" color="dark"></p>
                   </TabPane> */}
-                  {noncore.map((resource, index) => {
-                    return (
-                      <TabPane tabId={"pills" + index.toString()}>
-                        <iframe
-                          title={resource.name}
-                          width="100%"
-                          height="538"
-                          src={resource.link}
-                          frameborder="0"
-                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen
-                        ></iframe>
-                      </TabPane>
-                    );
-                  })}
-                </TabContent>
-              </CardBody>
-            </Card>
-          </Row>
-        </Container>
-      </div>
+                {noncore.map((resource, index) => {
+                  return (
+                    <TabPane tabId={"pills" + index.toString()}>
+                      <iframe
+                        title={resource.name}
+                        width="100%"
+                        height="538"
+                        src={resource.link}
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </TabPane>
+                  );
+                })}
+              </TabContent>
+            </CardBody>
+          </Card>
+        </Row>
+      </Container>
     </>
   );
 };

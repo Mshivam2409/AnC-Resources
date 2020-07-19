@@ -1,9 +1,5 @@
 import React from "react";
 
-// reactstrap components
-// import {
-// } from "reactstrap";
-
 // core components
 import HomeHeader from "../components/HomeHeader";
 import HomeNavbar from "components/HomeNavBar";

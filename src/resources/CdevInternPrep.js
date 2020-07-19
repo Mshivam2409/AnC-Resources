@@ -31,18 +31,27 @@ const Data = [
     link:
       "https://docs.google.com/presentation/d/1G0EpBLRU_Yu5Qc1N_hnuNoMKsSCd3jZU7ag0BN2qG9w/edit?usp=sharing",
   },
+  {
+    name: "Coding Test Resources",
+    link:
+      "https://docs.google.com/presentation/d/1bewlCbSVaqnMcsOCyJpj7AG-3uv9DtG3C5mvW0edVyQ/edit?usp=sharing",
+  },
+  {
+    name: "Common HR Questions",
+    link:
+      "https://docs.google.com/document/d/1zMKWYonYPTEAatNfqiLqdg8-BLSYq9SQ6NPL5vtdkL8/edit?usp=sharing",
+  },
 ];
 
 // core components
 const CDevInternPrep = () => {
   return (
     <>
-      <div className="section section-tabs">
-        <Container>
-          <Row>
-            <p className="category">Internship Preparation</p>
-            <Card>
-              {/* <CardHeader>
+      <Container>
+        <Row>
+          <p className="category">Internship Preparation</p>
+          <Card>
+            {/* <CardHeader>
                 <Nav className="justify-content-center" role="tablist" tabs>
                   <NavItem>
                     <NavLink
@@ -58,35 +67,34 @@ const CDevInternPrep = () => {
                   </NavItem>
                 </Nav>
               </CardHeader> */}
-              <CardBody>
-                <TabContent className="text-left" activeTab={"iconPills"}>
-                  <TabPane tabId="iconPills">
-                    <p class="h5" color="dark">
-                      <ul>
-                        {Data.map((resource) => {
-                          return (
-                            <li>
-                              <a
-                                href={resource.link}
-                                style={{
-                                  textDecoration: "none",
-                                  color: "black",
-                                }}
-                              >
-                                {resource.name}
-                              </a>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </p>
-                  </TabPane>
-                </TabContent>
-              </CardBody>
-            </Card>
-          </Row>
-        </Container>
-      </div>
+            <CardBody>
+              <TabContent className="text-left" activeTab={"iconPills"}>
+                <TabPane tabId="iconPills">
+                  <p class="h5" color="dark">
+                    <ul>
+                      {Data.map((resource) => {
+                        return (
+                          <li>
+                            <a
+                              href={resource.link}
+                              style={{
+                                textDecoration: "none",
+                                color: "black",
+                              }}
+                            >
+                              {resource.name}
+                            </a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </p>
+                </TabPane>
+              </TabContent>
+            </CardBody>
+          </Card>
+        </Row>
+      </Container>
     </>
   );
 };

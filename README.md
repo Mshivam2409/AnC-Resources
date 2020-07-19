@@ -101,7 +101,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 │   └── Home.js
 ├── resources
 │   ├── CDevInternGyan.js
-│   └── CdevInternPrep.js
+│   ├── CDevInternPrep.js
+│   └── Spo.js
 ├── serviceWorker.js
 └── setupTests.js
 ```

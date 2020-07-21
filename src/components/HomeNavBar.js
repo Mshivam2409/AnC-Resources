@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -17,7 +17,8 @@ import {
   UncontrolledTooltip,
 } from "reactstrap";
 
-function HomeNavbar() {
+function HomeNavbar(props) {
+  const history = useHistory();
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
@@ -39,6 +40,11 @@ function HomeNavbar() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
+
+  const signOut = (e) => {
+    e.preventDefault()
+    props.firebase.doSignOut().then(history.push('/login'))
+  }
   return (
     <>
       {collapseOpen ? (
@@ -81,7 +87,7 @@ function HomeNavbar() {
             <Nav navbar>
               {/* <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => {
                     e.preventDefault();
                     document
@@ -97,7 +103,7 @@ function HomeNavbar() {
                 <DropdownToggle
                   caret
                   color="default"
-                  href="#pablo"
+                  href="#"
                   nav
                   onClick={(e) => e.preventDefault()}
                 >
@@ -122,7 +128,7 @@ function HomeNavbar() {
                 <Button
                   className="nav-link btn-neutral"
                   color="info"
-                  href="#pablo"
+                  href="#"
                   id="upgrade-to-pro"
                   onClick={(e) => e.preventDefault()}
                 >
@@ -170,6 +176,20 @@ function HomeNavbar() {
                 </NavLink>
                 <UncontrolledTooltip target="#instagram-tooltip">
                   Follow us on LinkedIn
+                </UncontrolledTooltip>
+              </NavItem>
+              <NavItem>
+                <Button
+                  className="nav-link btn-neutral"
+                  color="info"
+                  href="#"
+                  id="upgrade-to-pro"
+                  onClick={(e) => signOut(e)}
+                >
+                  <p>Sign Out</p>
+                </Button>
+                <UncontrolledTooltip target="#upgrade-to-pro">
+                  Sign Out
                 </UncontrolledTooltip>
               </NavItem>
             </Nav>

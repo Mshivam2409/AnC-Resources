@@ -1,17 +1,12 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
+import LoadingScreen from 'react-loading-screen';
 
 // reactstrap components
 import {
-  Button,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
   Container,
   Row,
-  Col,
-  UncontrolledTooltip,
+  Col
 } from "reactstrap";
 
 // core components
@@ -23,8 +18,9 @@ import CDevInternPrep from "resources/CdevInternPrep";
 import CDevInternGyan from "resources/CDevInternGyan";
 import Spo from "resources/Spo";
 
-function CdevWing() {
-  const [pills, setPills] = React.useState("2");
+function CdevWing(props) {
+  const history = useHistory();
+  const [loading, setLoading] = React.useState(true);
   React.useEffect(() => {
     document.title = "Career Development Wing | Resources | AnC";
     document.body.classList.add("profile-page");
@@ -37,9 +33,35 @@ function CdevWing() {
       document.body.classList.remove("sidebar-collapse");
     };
   }, []);
+
+  React.useEffect(() => {
+    setLoading(true);
+    props.firebase.auth.onAuthStateChanged((user) => {
+      if (user) {
+        setLoading(false);
+      } else {
+        history.push('/login');
+      }
+    });
+  }, [props.firebase.auth, history]);
   return (
     <>
-      <WingNavbar WINGNAME="CAREER DEVELOPMENT WING" />
+      {(loading) && 
+      <LoadingScreen
+        loading={true}
+        bgColor='#f1f1f1'
+        spinnerColor='#9ee5f8'
+        textColor='#676767'
+        logoSrc={require("assets/img/anclogo.png")}
+        text='Processing your request. Please wait...'
+      >
+      <>
+      </>
+      </LoadingScreen>
+      }
+      {(!loading) &&
+      <>
+      <WingNavbar WINGNAME="CAREER DEVELOPMENT WING" firebase={props.firebase}/>
       <div className="wrapper">
         <WingHeader />
         <div className="section">
@@ -97,6 +119,8 @@ function CdevWing() {
         </div>
         <Footer />
       </div>
+      </>
+      }
     </>
   );
 }

@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "firebase": "^7.16.1",
     "moment": "2.26.0",
     "node-sass": "4.14.1",
     "nouislider": "14.5.0",
@@ -13,12 +14,14 @@
     "react-bootstrap-switch": "15.5.3",
     "react-datetime": "2.16.3",
     "react-dom": "16.13.1",
+    "react-loading-screen": "0.0.17",
+    "react-notify-toast": "^0.5.1",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
     "reactstrap": "8.4.1"
   },
-  "homepage": "./",
+  "homepage": "https://anciitk.in/resources/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

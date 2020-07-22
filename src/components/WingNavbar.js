@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 // reactstrap components
 import {
+  Button,
   Collapse,
   DropdownToggle,
   DropdownMenu,
@@ -17,6 +18,7 @@ import {
 } from "reactstrap";
 
 const WingNavbar = (props) => {
+  const history = useHistory();
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
@@ -38,6 +40,11 @@ const WingNavbar = (props) => {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
+
+  const signOut = (e) => {
+    e.preventDefault()
+    props.firebase.doSignOut().then(history.push('/login'))
+  }
   return (
     <>
       {collapseOpen ? (
@@ -55,7 +62,7 @@ const WingNavbar = (props) => {
             <DropdownToggle
               caret
               data-toggle="dropdown"
-              href="#pablo"
+              href="#"
               id="navbarDropdown"
               tag="a"
               onClick={(e) => e.preventDefault()}
@@ -68,23 +75,28 @@ const WingNavbar = (props) => {
               {/* <DropdownItem header tag="a">
                 Wings
               </DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+              <DropdownItem href="#" onClick={(e) => e.preventDefault()}>
                 Academics Wing
               </DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+              <DropdownItem href="#" onClick={(e) => e.preventDefault()}>
                 Research Wing
               </DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+              <DropdownItem href="#" onClick={(e) => e.preventDefault()}>
                 IR Wing
               </DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+              <DropdownItem href="#" onClick={(e) => e.preventDefault()}>
                 CDev Wing
               </DropdownItem> */}
               <DropdownItem divider></DropdownItem>
-              <DropdownItem href="/home">Home</DropdownItem>
+              <DropdownItem
+                href="#"
+                onClick={(e) => {e.preventDefault();history.push('/home')}}
+              >
+                Home
+              </DropdownItem>
               <DropdownItem divider></DropdownItem>
               <DropdownItem
-                href="#pablo"
+                href="#"
                 onClick={(e) => {
                   e.preventDefault();
                   window.location.href = "https://anciitk.in";
@@ -168,6 +180,20 @@ const WingNavbar = (props) => {
                 </NavLink>
                 <UncontrolledTooltip target="#instagram-tooltip">
                   Follow us on LinkedIn
+                </UncontrolledTooltip>
+              </NavItem>
+              <NavItem>
+                <Button
+                  className="nav-link btn-neutral"
+                  color="info"
+                  href="#"
+                  id="upgrade-to-pro"
+                  onClick={(e) => signOut(e)}
+                >
+                  <p>Sign Out</p>
+                </Button>
+                <UncontrolledTooltip target="#upgrade-to-pro">
+                  Sign Out
                 </UncontrolledTooltip>
               </NavItem>
             </Nav>

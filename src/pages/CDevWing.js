@@ -22,6 +22,7 @@ import Footer from "components/Footer";
 import CDevInternPrep from "resources/CdevInternPrep";
 import CDevInternGyan from "resources/CDevInternGyan";
 import Spo from "resources/Spo";
+import Resume from "resources/Resume";
 
 function CdevWing() {
   const [pills, setPills] = React.useState("2");
@@ -92,6 +93,7 @@ function CdevWing() {
               <CDevInternPrep />
               <Spo />
               <CDevInternGyan />
+              <Resume />
             </Container>
           </div>
         </div>

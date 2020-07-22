@@ -143,7 +143,7 @@ const Resume = () => {
                       <TabPane tabId={"iconPills" + index.toString()}>
                         <p class="h5" color="dark">
                           <ul>
-                            {resource.urls.map(async (url, index) => {
+                            {resource.urls.map((url, index) => {
                               return (
                                 <li style={{ textAlign: "left" }}>
                                   <a

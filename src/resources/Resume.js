@@ -21,6 +21,7 @@ var Resumes = [
     name: "Analytics",
     resumes: [
       "gs://careerportal-816f6.appspot.com/170738_2 - Sunit Gautam.pdf",
+      "gs://careerportal-816f6.appspot.com/inbound8897653106244602926 - Medha Agarwal.pdf",
     ],
     urls: [],
   },
@@ -28,7 +29,7 @@ var Resumes = [
     name: "Core",
     resumes: [
       "gs://careerportal-816f6.appspot.com/170295_1 - Harshit Verma.pdf",
-      "gs://careerportal-816f6.appspot.com/MITSUBISHI2019233(1) - Aditya Tiwari.pdf",
+      // "gs://careerportal-816f6.appspot.com/MITSUBISHI2019233(1) - Aditya Tiwari.pdf",
       "gs://careerportal-816f6.appspot.com/cv-onepage - Aniket Sanghi.pdf",
     ],
     urls: [],
@@ -39,6 +40,7 @@ var Resumes = [
       "gs://careerportal-816f6.appspot.com/170318_2 - Jay Gupta.pdf",
       "gs://careerportal-816f6.appspot.com/170520_2.pdf - Raghav Maheshwari.pdf",
       "gs://careerportal-816f6.appspot.com/170817_1 (1) - Yash Maheshwari.pdf",
+      "gs://careerportal-816f6.appspot.com/cv - Parth Athale.pdf",
     ],
     urls: [],
   },
@@ -77,6 +79,8 @@ var Resumes = [
     resumes: [
       "gs://careerportal-816f6.appspot.com/umang-malik - Umang Malik.pdf",
       "gs://careerportal-816f6.appspot.com/Pence_Resume_final - Pence Mataria.pdf",
+      "gs://careerportal-816f6.appspot.com/170211_1.pdf",
+      "gs://careerportal-816f6.appspot.com/170448_Master - Nitik Jain.pdf",
     ],
     urls: [],
   },

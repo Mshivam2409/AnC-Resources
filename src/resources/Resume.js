@@ -183,7 +183,6 @@ const Resume = () => {
                       href="#pablo"
                       onClick={(e) => {
                         e.preventDefault();
-                        setIconPills(index.toString());
                       }}
                     >
                       Resumes
@@ -199,7 +198,7 @@ const Resume = () => {
                   <TabPane tabId={"iconPills" + "0"}>
                     <p class="h5" color="dark">
                       <ul>
-                        {Drive.map((resource, index) => {
+                        {Drive.map((resource) => {
                           return (
                             <li style={{ textAlign: "left" }}>
                               <a
@@ -209,7 +208,7 @@ const Resume = () => {
                                   color: "black",
                                 }}
                               >
-                                {"View Samples "}
+                                {resource.name + " Samples"}
                               </a>
                             </li>
                           );

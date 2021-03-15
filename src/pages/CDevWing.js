@@ -11,6 +11,7 @@ import WingHeader from "components/WingHeader";
 import Footer from "components/Footer";
 //Resources
 import CDevInternPrep from "resources/CdevInternPrep";
+import AncResources from "resources/AncResources";
 import CDevInternGyan from "resources/CDevInternGyan";
 import Spo from "resources/Spo";
 import Resume from "resources/Resume";
@@ -110,6 +111,7 @@ function CdevWing(props) {
               </Container>
               <div className="section section-tabs">
                 <Container>
+                  <AncResources />
                   <CDevInternPrep />
                   <Spo />
                   <CDevInternGyan />

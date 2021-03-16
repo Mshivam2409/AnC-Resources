@@ -19,8 +19,13 @@ const Data = [
   {
     name: "Career Handbook Part 1",
     link:
-      "https://anciitk.in/resources/Handbook_Part_1.pdf",
+      "https://drive.google.com/file/d/18t9_06CrGNKXLRMdxw1_asK4bQo70XSX/view",
   },
+  {
+  	name: "Placement Guide Part 1",
+  	link:
+  	  "https://drive.google.com/file/d/1MWtqZGNT8GWQ7HlbH8dZyFMiMG4mzAzU/view",
+  }
 ];
 
 // core components
